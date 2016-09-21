@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>robotnik_test_robot_bringup</name>
+  <version>0.0.0</version>
+  <description>The robotnik_test_robot_bringup package</description>
+
+  <maintainer email="cvillar@robotnik.es">Carlos Villar</maintainer>
+
+  <license>BSD</license>
+  <author email="cvillar@robotnik.es">Carlos Villar</author>
+  <buildtool_depend>catkin</buildtool_depend>
+
+
+  <export>
+
+  </export>
+</package>

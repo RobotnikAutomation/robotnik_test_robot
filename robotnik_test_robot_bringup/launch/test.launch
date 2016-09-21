@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<launch>
+ 
+  <!-- Loads move_base -->
+  <include file="$(find summit_xl_navigation)/launch/move_base_nomap.launch"/>
+  
+  <!-- Node for moving the robot doiung a square -->
+  <node pkg="robotnik_test_robot_test_square" type="test_square" name="test_square" output="screen">
+    <param name="numLaps" value="10"/>
+    <param name="side_size" value="2.0"/>
+    <param name="target_frame_id" value="odom"/>
+    
+    <!-- Parameters to override in move_base -->
+    <param name="max_vel_x" value="2.0"/>
+    <param name="max_vel_theta" value="1.0"/>
+    <param name="acc_lim_x" value="1.0"/>
+    <param name="acc_lim_theta" value="1.0"/>
+  </node>
+  
+  <!-- Node for battery control -->
+  <node pkg="robotnik_test_robot_test_battery" type="test_battery" name="test_battery" output="screen">
+    <param name="battery_topic" value="/battery"/>
+    <param name="min_volt" value="23.0"/>
+    <param name="max_volt" value="26.0"/>
+    <param name="verbose" value="true"/>
+  </node> 
+  
+  <!-- Node for measuring distance travelled -->
+  <node pkg="robotnik_test_robot_distance" type="distance" name="distance" output="screen">
+    <param name="odom_topic" value="/summit_xl/odom"/>
+    <!-- Number of meters traveled for logging the distance travelled -->
+    <param name="meters" value="10"/>
+    <!-- If true it will log at every odom message -->
+    <param name="verbose" value="false"/>
+  </node> 
+</launch>

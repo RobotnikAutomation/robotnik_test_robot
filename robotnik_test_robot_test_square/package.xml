@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+  <name>robotnik_test_robot_test_square</name>
+  <version>0.0.0</version>
+  <description>The test_square package</description>
+
+  <maintainer email="cvillar@robotnik.es">Carlos Villar</maintainer>
+
+  <license>BSD</license>
+
+
+  <author email="cvillar@robotnik.es">Carlos Villar</author> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>move_base_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>move_base_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+
+
+  <export>
+
+  </export>
+</package>
