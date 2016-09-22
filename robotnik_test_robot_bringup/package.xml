@@ -9,6 +9,10 @@
   <license>BSD</license>
   <author email="cvillar@robotnik.es">Carlos Villar</author>
   <buildtool_depend>catkin</buildtool_depend>
+  
+  <run_depend>navigation</run_depend>
+  <run_depend>move_base</run_depend>
+  <run_depend>teb_local_planner</run_depend>
 
 
   <export>
