@@ -9,7 +9,6 @@ Before run the test.launch, you must reset the odom to x=0 and y=0
 The test_square node will move the robot throught various points doing a square.
 
 C---B
-.   .
 D---A
 
 The robot will start at point A.
