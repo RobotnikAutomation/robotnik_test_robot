@@ -75,7 +75,7 @@ int main(int argc, char** argv){
 	  ss << acc_lim_y;
 	  aux = ss.str();
 	  system(("rosrun dynamic_reconfigure dynparam set /move_base/TebLocalPlannerROS acc_lim_y "+aux).c_str());
-	  system("rosrun dynamic_reconfigure dynparam set /move_base/TebLocalPlannerROS weight_kinematics_nh 10");
+	  system("rosrun dynamic_reconfigure dynparam set /move_base/TebLocalPlannerROS weight_kinematics_nh 1");
 		 
   }
   
