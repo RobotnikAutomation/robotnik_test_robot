@@ -18,7 +18,7 @@
     <param name="side_size" value="2.0"/>
     <param name="target_frame_id" value="odom"/>
     <!-- Omni only for teb_local_planner 0.6.3 or higher -->
-    <param name="omni_movement" value="true"/>
+    <param name="omni_movement" value="false"/>
     
     <!-- Parameters to override in move_base, "y" only will be overriden if omni is set to true-->
     <param name="max_vel_x" value="2.0"/>
