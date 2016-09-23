@@ -39,6 +39,7 @@
   
   <!-- Node for measuring distance travelled -->
   <node pkg="robotnik_test_robot_distance" type="distance" name="distance" output="screen">
+    <!-- Specify the odom topic for your robot -->
     <param name="odom_topic" value="/summit_xl/odom"/>
     <!-- It will log for each number of meters travelled -->
     <param name="meters" value="10"/>
