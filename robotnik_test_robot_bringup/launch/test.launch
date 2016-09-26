@@ -34,7 +34,7 @@
     <param name="battery_topic" value="/battery"/>
     <param name="min_volt" value="23.0"/>
     <param name="max_volt" value="26.0"/>
-    <param name="verbose" value="true"/>
+    <param name="verbose" value="false"/>
   </node> 
   
   <!-- Node for measuring distance travelled -->
@@ -46,4 +46,7 @@
     <!-- If true it will log at every odom message -->
     <param name="verbose" value="false"/>
   </node> 
+  
+  <!-- Record topics, modify as you wish -->
+  <node pkg="rosbag" type="record" name="rosbag_record_data" respawn="true" output="screen" args="-o /tmp/test_robot /tf /summit_xl/odom /move_base/cmd_vel /battery" />
 </launch>
