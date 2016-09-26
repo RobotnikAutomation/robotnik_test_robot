@@ -14,3 +14,5 @@ C---B
 D---A
  
 The robot will start at point A.
+
+IMPORTANT: Edit bringup/config/costmap_common_params.yaml to specify your obstacle detection layer.
